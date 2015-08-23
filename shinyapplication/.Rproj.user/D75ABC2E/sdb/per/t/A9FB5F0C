@@ -1,0 +1,17 @@
+{
+    "contents" : "---\ntitle: \"DevelopingDataProduct_Slidify\"\nauthor: \"Michale Gebrekiros\"\ndate: \"Saturday, August 22, 2015\"\noutput: html_document\n---\n\n# Coursera Reproducible Pitch\n\n\nFind here all the data that have been use for this presentation and also for the first part of the data Science Project: \"First, you will create a Shiny application and deploy it on Rstudio's servers.Second, you will use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about your application.\" I have used for the assignment the  mtcars dataset.\n\n# mtcars dataset\n\n## Motor Trend Car Road Tests\n\nThe data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).\n\n```{r}\n\nlibrary(datasets)\nhead(mtcars, 3)\n```\n\n\n\n\n\n\n\n\n\n```{r}\n formulaTextPoint <- reactive({\n    paste(\"mpg ~\", \"as.integer(\", input$variable, \")\")  })\n\n  fit <- reactive({\n    lm(as.formula(formulaTextPoint()), data=mpgData)  })\n  ...\n  output$fit <- renderPrint({\n    summary(fit()) })\n\n  output$mpgPlot <- renderPlot({\n    with(mpgData, {\n      plot(as.formula(formulaTextPoint()))\n      abline(fit(), col=2)\n    })  })\n\n```\n\n\n",
+    "created" : 1440250116139.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1515802145",
+    "id" : "A9FB5F0C",
+    "lastKnownWriteTime" : 1440255365,
+    "path" : "D:/Developing_Data_Product_Project/shinyapplication/slidify.Rmd",
+    "project_path" : "slidify.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

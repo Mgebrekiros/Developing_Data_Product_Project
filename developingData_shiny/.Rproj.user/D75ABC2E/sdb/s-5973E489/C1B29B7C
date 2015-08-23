@@ -1,0 +1,16 @@
+{
+    "contents" : "Developing data products_Slidify\n===\nauthor: Michale Gebrekiros\ndate: 8/22/2015\n\n===\n Reproducible Pitch Presentation\n\nI have made my  shiny app, it can be found at https://mgebrekiros.shinyapps.io/developingData_shiny.  \nHere's what I tried to follow the assignment questions\n\n### It must be done in Slidify or Rstudio Presenter\n### It must be 5 pages\n### must be hosted on github or Rpubs\n### must contained some embedded R code that gets run when slidifying the document\n\n===\n# Motor Trend Car Road Tests\nThe data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).\n\n===\n# Source\nHenderson and Velleman (1981), Building multiple regression models interactively. Biometrics, 37, 391–411\n\n\n===\n\n```{r}\nlibrary(datasets)\nhead(mtcars, 3)\n```\n\n\n===\nmtcars dataset - Format\n\nA data frame with 32 observations on 11 variables.\n\nIndex  Field\tDetail\n[, 1]\tmpg\tMiles/(US) gallon\n[, 2]\tcyl\tNumber of cylinders\n[, 3]\tdisp\tDisplacement (cu.in.)\n[, 4]\thp\tGross horsepower\n[, 5]\tdrat\tRear axle ratio\n[, 6]\twt\tWeight (lb/1000)\n[, 7]\tqsec\t1/4 mile time\n[, 8]\tvs\tV/S\n[, 9]\tam\tTransmission (0 = automatic, 1 = manual)\n[,10]\tgear\tNumber of forward gears\n[,11]\tcarb\tNumber of carburetors\n\n\n\n===\n\n\n\n\n===",
+    "created" : 1440257685428.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "625293043",
+    "id" : "C1B29B7C",
+    "lastKnownWriteTime" : 1440260175,
+    "path" : "D:/Developing_Data_Product_Project/developingData_shiny/developingData_slidify.Rpres",
+    "project_path" : "developingData_slidify.Rpres",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_presentation"
+}
